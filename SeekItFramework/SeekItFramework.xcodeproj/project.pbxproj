@@ -1,0 +1,652 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18FE53F62241154B0057B3BD /* SeekItFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18FE53EC2241154A0057B3BD /* SeekItFramework.framework */; };
+		18FE53FB2241154B0057B3BD /* SeekItFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE53FA2241154B0057B3BD /* SeekItFrameworkTests.swift */; };
+		18FE53FD2241154B0057B3BD /* SeekItFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 18FE53EF2241154A0057B3BD /* SeekItFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18FE5439224115A80057B3BD /* LostTrackerLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE540A224115A30057B3BD /* LostTrackerLocation.swift */; };
+		18FE543A224115A90057B3BD /* SLSensorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE540B224115A30057B3BD /* SLSensorManager.swift */; };
+		18FE543B224115A90057B3BD /* WriterQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE540C224115A30057B3BD /* WriterQueue.swift */; };
+		18FE543C224115A90057B3BD /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18FE540D224115A30057B3BD /* Info.plist */; };
+		18FE543D224115A90057B3BD /* DeviceInfoServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE540E224115A40057B3BD /* DeviceInfoServiceModel.swift */; };
+		18FE543E224115A90057B3BD /* TAWifiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE540F224115A40057B3BD /* TAWifiModel.swift */; };
+		18FE543F224115A90057B3BD /* RingServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE5410224115A40057B3BD /* RingServiceModel.swift */; };
+		18FE5440224115A90057B3BD /* CameraServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE5411224115A40057B3BD /* CameraServiceModel.swift */; };
+		18FE5441224115A90057B3BD /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE5412224115A40057B3BD /* Date+Extensions.swift */; };
+		18FE5442224115A90057B3BD /* SLNotificationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE5413224115A40057B3BD /* SLNotificationsManager.swift */; };
+		18FE5443224115A90057B3BD /* DataTransformers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE5414224115A40057B3BD /* DataTransformers.swift */; };
+		18FE5444224115A90057B3BD /* TASleepModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE5415224115A40057B3BD /* TASleepModel.swift */; };
+		18FE5445224115A90057B3BD /* TAShopItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE5416224115A40057B3BD /* TAShopItemModel.swift */; };
+		18FE5446224115A90057B3BD /* NotifyHistoryInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE5417224115A40057B3BD /* NotifyHistoryInfo.swift */; };
+		18FE5447224115A90057B3BD /* TATrackerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE5418224115A40057B3BD /* TATrackerModel.swift */; };
+		18FE5448224115A90057B3BD /* SeekItFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 18FE5419224115A40057B3BD /* SeekItFramework.h */; };
+		18FE5449224115A90057B3BD /* SleepInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE541A224115A50057B3BD /* SleepInfo.swift */; };
+		18FE544A224115A90057B3BD /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE541B224115A50057B3BD /* Map.swift */; };
+		18FE544B224115A90057B3BD /* SensorServiceModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE541C224115A50057B3BD /* SensorServiceModelManager.swift */; };
+		18FE544C224115A90057B3BD /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE541D224115A50057B3BD /* String+Extensions.swift */; };
+		18FE544D224115A90057B3BD /* TAUserProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE541E224115A50057B3BD /* TAUserProfileModel.swift */; };
+		18FE544E224115A90057B3BD /* TARaiseTicketModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE541F224115A50057B3BD /* TARaiseTicketModel.swift */; };
+		18FE544F224115A90057B3BD /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE5420224115A50057B3BD /* AudioManager.swift */; };
+		18FE5450224115A90057B3BD /* TrackerLastKnownLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE5421224115A50057B3BD /* TrackerLastKnownLocation.swift */; };
+		18FE5451224115A90057B3BD /* MainServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE5422224115A50057B3BD /* MainServiceModel.swift */; };
+		18FE5452224115A90057B3BD /* TrackerDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE5423224115A50057B3BD /* TrackerDevice.swift */; };
+		18FE5453224115A90057B3BD /* SLRealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE5424224115A50057B3BD /* SLRealmManager.swift */; };
+		18FE5454224115A90057B3BD /* LedServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE5425224115A60057B3BD /* LedServiceModel.swift */; };
+		18FE5455224115A90057B3BD /* ServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE5426224115A60057B3BD /* ServiceModel.swift */; };
+		18FE5456224115A90057B3BD /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE5427224115A60057B3BD /* ReachabilityManager.swift */; };
+		18FE5457224115A90057B3BD /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE5428224115A60057B3BD /* Data+Extensions.swift */; };
+		18FE5458224115A90057B3BD /* BatteryServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE5429224115A60057B3BD /* BatteryServiceModel.swift */; };
+		18FE5459224115A90057B3BD /* UserProfileInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE542A224115A60057B3BD /* UserProfileInfo.swift */; };
+		18FE545A224115A90057B3BD /* SLCloudConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE542B224115A60057B3BD /* SLCloudConnector.swift */; };
+		18FE545B224115A90057B3BD /* SLLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE542C224115A70057B3BD /* SLLocationManager.swift */; };
+		18FE545C224115A90057B3BD /* AudioCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE542D224115A70057B3BD /* AudioCache.swift */; };
+		18FE545D224115A90057B3BD /* TrackersInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE542E224115A70057B3BD /* TrackersInfo.swift */; };
+		18FE545E224115A90057B3BD /* WifiInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE542F224115A70057B3BD /* WifiInfo.swift */; };
+		18FE545F224115A90057B3BD /* SLAudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE5430224115A70057B3BD /* SLAudioPlayer.swift */; };
+		18FE5460224115A90057B3BD /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE5431224115A70057B3BD /* NetworkManager.swift */; };
+		18FE5461224115A90057B3BD /* ContactInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE5432224115A70057B3BD /* ContactInfo.swift */; };
+		18FE5462224115A90057B3BD /* SensorManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE5433224115A80057B3BD /* SensorManagerDelegate.swift */; };
+		18FE5463224115A90057B3BD /* SSIDUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE5434224115A80057B3BD /* SSIDUtility.swift */; };
+		18FE5464224115A90057B3BD /* TAUUIDModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE5435224115A80057B3BD /* TAUUIDModel.swift */; };
+		18FE5465224115A90057B3BD /* TrackerLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE5436224115A80057B3BD /* TrackerLog.swift */; };
+		18FE5466224115A90057B3BD /* TAContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE5437224115A80057B3BD /* TAContactModel.swift */; };
+		18FE5467224115A90057B3BD /* TAHistoryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE5438224115A80057B3BD /* TAHistoryList.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18FE53F72241154B0057B3BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18FE53E32241154A0057B3BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18FE53EB2241154A0057B3BD;
+			remoteInfo = SeekItFramework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18FE53EC2241154A0057B3BD /* SeekItFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SeekItFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18FE53EF2241154A0057B3BD /* SeekItFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SeekItFramework.h; sourceTree = "<group>"; };
+		18FE53F02241154A0057B3BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18FE53F52241154A0057B3BD /* SeekItFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SeekItFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18FE53FA2241154B0057B3BD /* SeekItFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeekItFrameworkTests.swift; sourceTree = "<group>"; };
+		18FE53FC2241154B0057B3BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18FE540A224115A30057B3BD /* LostTrackerLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LostTrackerLocation.swift; sourceTree = "<group>"; };
+		18FE540B224115A30057B3BD /* SLSensorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SLSensorManager.swift; sourceTree = "<group>"; };
+		18FE540C224115A30057B3BD /* WriterQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriterQueue.swift; sourceTree = "<group>"; };
+		18FE540D224115A30057B3BD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../../../../../Documents/SeekItFramework/SeekItFramework/SeekItFramework/Info.plist; sourceTree = "<group>"; };
+		18FE540E224115A40057B3BD /* DeviceInfoServiceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceInfoServiceModel.swift; sourceTree = "<group>"; };
+		18FE540F224115A40057B3BD /* TAWifiModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TAWifiModel.swift; sourceTree = "<group>"; };
+		18FE5410224115A40057B3BD /* RingServiceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RingServiceModel.swift; sourceTree = "<group>"; };
+		18FE5411224115A40057B3BD /* CameraServiceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraServiceModel.swift; sourceTree = "<group>"; };
+		18FE5412224115A40057B3BD /* Date+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		18FE5413224115A40057B3BD /* SLNotificationsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SLNotificationsManager.swift; sourceTree = "<group>"; };
+		18FE5414224115A40057B3BD /* DataTransformers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataTransformers.swift; sourceTree = "<group>"; };
+		18FE5415224115A40057B3BD /* TASleepModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TASleepModel.swift; sourceTree = "<group>"; };
+		18FE5416224115A40057B3BD /* TAShopItemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TAShopItemModel.swift; sourceTree = "<group>"; };
+		18FE5417224115A40057B3BD /* NotifyHistoryInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotifyHistoryInfo.swift; sourceTree = "<group>"; };
+		18FE5418224115A40057B3BD /* TATrackerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TATrackerModel.swift; sourceTree = "<group>"; };
+		18FE5419224115A40057B3BD /* SeekItFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SeekItFramework.h; path = ../../../../../Documents/SeekItFramework/SeekItFramework/SeekItFramework/SeekItFramework.h; sourceTree = "<group>"; };
+		18FE541A224115A50057B3BD /* SleepInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SleepInfo.swift; sourceTree = "<group>"; };
+		18FE541B224115A50057B3BD /* Map.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
+		18FE541C224115A50057B3BD /* SensorServiceModelManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorServiceModelManager.swift; sourceTree = "<group>"; };
+		18FE541D224115A50057B3BD /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		18FE541E224115A50057B3BD /* TAUserProfileModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TAUserProfileModel.swift; sourceTree = "<group>"; };
+		18FE541F224115A50057B3BD /* TARaiseTicketModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TARaiseTicketModel.swift; sourceTree = "<group>"; };
+		18FE5420224115A50057B3BD /* AudioManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		18FE5421224115A50057B3BD /* TrackerLastKnownLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackerLastKnownLocation.swift; sourceTree = "<group>"; };
+		18FE5422224115A50057B3BD /* MainServiceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainServiceModel.swift; sourceTree = "<group>"; };
+		18FE5423224115A50057B3BD /* TrackerDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackerDevice.swift; sourceTree = "<group>"; };
+		18FE5424224115A50057B3BD /* SLRealmManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SLRealmManager.swift; sourceTree = "<group>"; };
+		18FE5425224115A60057B3BD /* LedServiceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LedServiceModel.swift; sourceTree = "<group>"; };
+		18FE5426224115A60057B3BD /* ServiceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceModel.swift; sourceTree = "<group>"; };
+		18FE5427224115A60057B3BD /* ReachabilityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
+		18FE5428224115A60057B3BD /* Data+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Extensions.swift"; sourceTree = "<group>"; };
+		18FE5429224115A60057B3BD /* BatteryServiceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BatteryServiceModel.swift; sourceTree = "<group>"; };
+		18FE542A224115A60057B3BD /* UserProfileInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileInfo.swift; sourceTree = "<group>"; };
+		18FE542B224115A60057B3BD /* SLCloudConnector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SLCloudConnector.swift; sourceTree = "<group>"; };
+		18FE542C224115A70057B3BD /* SLLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SLLocationManager.swift; sourceTree = "<group>"; };
+		18FE542D224115A70057B3BD /* AudioCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioCache.swift; sourceTree = "<group>"; };
+		18FE542E224115A70057B3BD /* TrackersInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackersInfo.swift; sourceTree = "<group>"; };
+		18FE542F224115A70057B3BD /* WifiInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WifiInfo.swift; sourceTree = "<group>"; };
+		18FE5430224115A70057B3BD /* SLAudioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SLAudioPlayer.swift; sourceTree = "<group>"; };
+		18FE5431224115A70057B3BD /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		18FE5432224115A70057B3BD /* ContactInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactInfo.swift; sourceTree = "<group>"; };
+		18FE5433224115A80057B3BD /* SensorManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorManagerDelegate.swift; sourceTree = "<group>"; };
+		18FE5434224115A80057B3BD /* SSIDUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSIDUtility.swift; sourceTree = "<group>"; };
+		18FE5435224115A80057B3BD /* TAUUIDModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TAUUIDModel.swift; sourceTree = "<group>"; };
+		18FE5436224115A80057B3BD /* TrackerLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackerLog.swift; sourceTree = "<group>"; };
+		18FE5437224115A80057B3BD /* TAContactModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TAContactModel.swift; sourceTree = "<group>"; };
+		18FE5438224115A80057B3BD /* TAHistoryList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TAHistoryList.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18FE53E92241154A0057B3BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18FE53F22241154A0057B3BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18FE53F62241154B0057B3BD /* SeekItFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18FE53E22241154A0057B3BD = {
+			isa = PBXGroup;
+			children = (
+				18FE53EE2241154A0057B3BD /* SeekItFramework */,
+				18FE53F92241154B0057B3BD /* SeekItFrameworkTests */,
+				18FE53ED2241154A0057B3BD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18FE53ED2241154A0057B3BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18FE53EC2241154A0057B3BD /* SeekItFramework.framework */,
+				18FE53F52241154A0057B3BD /* SeekItFrameworkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18FE53EE2241154A0057B3BD /* SeekItFramework */ = {
+			isa = PBXGroup;
+			children = (
+				18FE542D224115A70057B3BD /* AudioCache.swift */,
+				18FE5420224115A50057B3BD /* AudioManager.swift */,
+				18FE5429224115A60057B3BD /* BatteryServiceModel.swift */,
+				18FE5411224115A40057B3BD /* CameraServiceModel.swift */,
+				18FE5432224115A70057B3BD /* ContactInfo.swift */,
+				18FE5428224115A60057B3BD /* Data+Extensions.swift */,
+				18FE5414224115A40057B3BD /* DataTransformers.swift */,
+				18FE5412224115A40057B3BD /* Date+Extensions.swift */,
+				18FE540E224115A40057B3BD /* DeviceInfoServiceModel.swift */,
+				18FE540D224115A30057B3BD /* Info.plist */,
+				18FE5425224115A60057B3BD /* LedServiceModel.swift */,
+				18FE540A224115A30057B3BD /* LostTrackerLocation.swift */,
+				18FE5422224115A50057B3BD /* MainServiceModel.swift */,
+				18FE541B224115A50057B3BD /* Map.swift */,
+				18FE5431224115A70057B3BD /* NetworkManager.swift */,
+				18FE5417224115A40057B3BD /* NotifyHistoryInfo.swift */,
+				18FE5427224115A60057B3BD /* ReachabilityManager.swift */,
+				18FE5410224115A40057B3BD /* RingServiceModel.swift */,
+				18FE5419224115A40057B3BD /* SeekItFramework.h */,
+				18FE5433224115A80057B3BD /* SensorManagerDelegate.swift */,
+				18FE541C224115A50057B3BD /* SensorServiceModelManager.swift */,
+				18FE5426224115A60057B3BD /* ServiceModel.swift */,
+				18FE5430224115A70057B3BD /* SLAudioPlayer.swift */,
+				18FE542B224115A60057B3BD /* SLCloudConnector.swift */,
+				18FE541A224115A50057B3BD /* SleepInfo.swift */,
+				18FE542C224115A70057B3BD /* SLLocationManager.swift */,
+				18FE5413224115A40057B3BD /* SLNotificationsManager.swift */,
+				18FE5424224115A50057B3BD /* SLRealmManager.swift */,
+				18FE540B224115A30057B3BD /* SLSensorManager.swift */,
+				18FE5434224115A80057B3BD /* SSIDUtility.swift */,
+				18FE541D224115A50057B3BD /* String+Extensions.swift */,
+				18FE5437224115A80057B3BD /* TAContactModel.swift */,
+				18FE5438224115A80057B3BD /* TAHistoryList.swift */,
+				18FE541F224115A50057B3BD /* TARaiseTicketModel.swift */,
+				18FE5416224115A40057B3BD /* TAShopItemModel.swift */,
+				18FE5415224115A40057B3BD /* TASleepModel.swift */,
+				18FE5418224115A40057B3BD /* TATrackerModel.swift */,
+				18FE541E224115A50057B3BD /* TAUserProfileModel.swift */,
+				18FE5435224115A80057B3BD /* TAUUIDModel.swift */,
+				18FE540F224115A40057B3BD /* TAWifiModel.swift */,
+				18FE5423224115A50057B3BD /* TrackerDevice.swift */,
+				18FE5421224115A50057B3BD /* TrackerLastKnownLocation.swift */,
+				18FE5436224115A80057B3BD /* TrackerLog.swift */,
+				18FE542E224115A70057B3BD /* TrackersInfo.swift */,
+				18FE542A224115A60057B3BD /* UserProfileInfo.swift */,
+				18FE542F224115A70057B3BD /* WifiInfo.swift */,
+				18FE540C224115A30057B3BD /* WriterQueue.swift */,
+				18FE53EF2241154A0057B3BD /* SeekItFramework.h */,
+				18FE53F02241154A0057B3BD /* Info.plist */,
+			);
+			path = SeekItFramework;
+			sourceTree = "<group>";
+		};
+		18FE53F92241154B0057B3BD /* SeekItFrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				18FE53FA2241154B0057B3BD /* SeekItFrameworkTests.swift */,
+				18FE53FC2241154B0057B3BD /* Info.plist */,
+			);
+			path = SeekItFrameworkTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		18FE53E72241154A0057B3BD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18FE5448224115A90057B3BD /* SeekItFramework.h in Headers */,
+				18FE53FD2241154B0057B3BD /* SeekItFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		18FE53EB2241154A0057B3BD /* SeekItFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18FE54002241154B0057B3BD /* Build configuration list for PBXNativeTarget "SeekItFramework" */;
+			buildPhases = (
+				18FE53E72241154A0057B3BD /* Headers */,
+				18FE53E82241154A0057B3BD /* Sources */,
+				18FE53E92241154A0057B3BD /* Frameworks */,
+				18FE53EA2241154A0057B3BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SeekItFramework;
+			productName = SeekItFramework;
+			productReference = 18FE53EC2241154A0057B3BD /* SeekItFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		18FE53F42241154A0057B3BD /* SeekItFrameworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18FE54032241154B0057B3BD /* Build configuration list for PBXNativeTarget "SeekItFrameworkTests" */;
+			buildPhases = (
+				18FE53F12241154A0057B3BD /* Sources */,
+				18FE53F22241154A0057B3BD /* Frameworks */,
+				18FE53F32241154A0057B3BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18FE53F82241154B0057B3BD /* PBXTargetDependency */,
+			);
+			name = SeekItFrameworkTests;
+			productName = SeekItFrameworkTests;
+			productReference = 18FE53F52241154A0057B3BD /* SeekItFrameworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18FE53E32241154A0057B3BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Apple;
+				TargetAttributes = {
+					18FE53EB2241154A0057B3BD = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					18FE53F42241154A0057B3BD = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 18FE53E62241154A0057B3BD /* Build configuration list for PBXProject "SeekItFramework" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 18FE53E22241154A0057B3BD;
+			productRefGroup = 18FE53ED2241154A0057B3BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18FE53EB2241154A0057B3BD /* SeekItFramework */,
+				18FE53F42241154A0057B3BD /* SeekItFrameworkTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18FE53EA2241154A0057B3BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18FE543C224115A90057B3BD /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18FE53F32241154A0057B3BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18FE53E82241154A0057B3BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18FE5460224115A90057B3BD /* NetworkManager.swift in Sources */,
+				18FE545E224115A90057B3BD /* WifiInfo.swift in Sources */,
+				18FE543A224115A90057B3BD /* SLSensorManager.swift in Sources */,
+				18FE5442224115A90057B3BD /* SLNotificationsManager.swift in Sources */,
+				18FE5452224115A90057B3BD /* TrackerDevice.swift in Sources */,
+				18FE5458224115A90057B3BD /* BatteryServiceModel.swift in Sources */,
+				18FE544A224115A90057B3BD /* Map.swift in Sources */,
+				18FE5464224115A90057B3BD /* TAUUIDModel.swift in Sources */,
+				18FE5441224115A90057B3BD /* Date+Extensions.swift in Sources */,
+				18FE5465224115A90057B3BD /* TrackerLog.swift in Sources */,
+				18FE544C224115A90057B3BD /* String+Extensions.swift in Sources */,
+				18FE543F224115A90057B3BD /* RingServiceModel.swift in Sources */,
+				18FE543D224115A90057B3BD /* DeviceInfoServiceModel.swift in Sources */,
+				18FE5459224115A90057B3BD /* UserProfileInfo.swift in Sources */,
+				18FE5447224115A90057B3BD /* TATrackerModel.swift in Sources */,
+				18FE5446224115A90057B3BD /* NotifyHistoryInfo.swift in Sources */,
+				18FE5463224115A90057B3BD /* SSIDUtility.swift in Sources */,
+				18FE5455224115A90057B3BD /* ServiceModel.swift in Sources */,
+				18FE5453224115A90057B3BD /* SLRealmManager.swift in Sources */,
+				18FE545B224115A90057B3BD /* SLLocationManager.swift in Sources */,
+				18FE544E224115A90057B3BD /* TARaiseTicketModel.swift in Sources */,
+				18FE544B224115A90057B3BD /* SensorServiceModelManager.swift in Sources */,
+				18FE5457224115A90057B3BD /* Data+Extensions.swift in Sources */,
+				18FE543E224115A90057B3BD /* TAWifiModel.swift in Sources */,
+				18FE545A224115A90057B3BD /* SLCloudConnector.swift in Sources */,
+				18FE5466224115A90057B3BD /* TAContactModel.swift in Sources */,
+				18FE5462224115A90057B3BD /* SensorManagerDelegate.swift in Sources */,
+				18FE5439224115A80057B3BD /* LostTrackerLocation.swift in Sources */,
+				18FE545C224115A90057B3BD /* AudioCache.swift in Sources */,
+				18FE5456224115A90057B3BD /* ReachabilityManager.swift in Sources */,
+				18FE544D224115A90057B3BD /* TAUserProfileModel.swift in Sources */,
+				18FE545D224115A90057B3BD /* TrackersInfo.swift in Sources */,
+				18FE5444224115A90057B3BD /* TASleepModel.swift in Sources */,
+				18FE5450224115A90057B3BD /* TrackerLastKnownLocation.swift in Sources */,
+				18FE544F224115A90057B3BD /* AudioManager.swift in Sources */,
+				18FE5443224115A90057B3BD /* DataTransformers.swift in Sources */,
+				18FE5467224115A90057B3BD /* TAHistoryList.swift in Sources */,
+				18FE5440224115A90057B3BD /* CameraServiceModel.swift in Sources */,
+				18FE543B224115A90057B3BD /* WriterQueue.swift in Sources */,
+				18FE5461224115A90057B3BD /* ContactInfo.swift in Sources */,
+				18FE545F224115A90057B3BD /* SLAudioPlayer.swift in Sources */,
+				18FE5445224115A90057B3BD /* TAShopItemModel.swift in Sources */,
+				18FE5451224115A90057B3BD /* MainServiceModel.swift in Sources */,
+				18FE5449224115A90057B3BD /* SleepInfo.swift in Sources */,
+				18FE5454224115A90057B3BD /* LedServiceModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18FE53F12241154A0057B3BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18FE53FB2241154B0057B3BD /* SeekItFrameworkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18FE53F82241154B0057B3BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18FE53EB2241154A0057B3BD /* SeekItFramework */;
+			targetProxy = 18FE53F72241154B0057B3BD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		18FE53FE2241154B0057B3BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		18FE53FF2241154B0057B3BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		18FE54012241154B0057B3BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SeekItFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.SeekItFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18FE54022241154B0057B3BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SeekItFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.SeekItFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		18FE54042241154B0057B3BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SeekItFrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.SeekItFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18FE54052241154B0057B3BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SeekItFrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.SeekItFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18FE53E62241154A0057B3BD /* Build configuration list for PBXProject "SeekItFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18FE53FE2241154B0057B3BD /* Debug */,
+				18FE53FF2241154B0057B3BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18FE54002241154B0057B3BD /* Build configuration list for PBXNativeTarget "SeekItFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18FE54012241154B0057B3BD /* Debug */,
+				18FE54022241154B0057B3BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18FE54032241154B0057B3BD /* Build configuration list for PBXNativeTarget "SeekItFrameworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18FE54042241154B0057B3BD /* Debug */,
+				18FE54052241154B0057B3BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18FE53E32241154A0057B3BD /* Project object */;
+}
